@@ -9,7 +9,7 @@ stages {
     
     stage('build') {
   steps {
-    sh 'pip install -r requirements.txt'
+    echo 'Building'
   }
 }
     stage ('Test'){
