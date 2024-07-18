@@ -9,7 +9,7 @@ stages {
     
     stage('build') {
         steps {
-   		echo 'buliding'
+   		sh 'python3 operarions.py'
            }
      }
     stage ('Test'){
