@@ -8,16 +8,10 @@ stages {
     }
     
     stage('build') {
-  steps {
-   '''
-    echo 'Building'
-    sh 'python3 operations.py'
-    sh 'python3 calc.py'
-
-    
-   '''
-  }
-}
+        steps {
+   		echo 'buliding'
+           }
+     }
     stage ('Test'){
         steps {
             sh 'python3 -m unit-test.py'
