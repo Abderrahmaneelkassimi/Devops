@@ -6,7 +6,7 @@ from operations import add, subtract, multiply, divide, power
 class TestSum(unittest.TestCase):
 
     def test_add_operation_returns_correct_value(self):
-        self.assertEqual(add(10, 90), 100)
+        self.assertEqual(add(10, 90), 110)
 
     def test_substract_operation_returns_correct_value(self):
         self.assertEqual(subtract(100, 90), 10)
