@@ -9,7 +9,7 @@ class TestOperations(unittest.TestCase):
 
     def test_subtract_operation_returns_correct_value(self):
         print("Running test_subtract_operation_returns_correct_value")
-        self.assertEqual(subtract(100, 90), 100)  # This should fail
+        self.assertEqual(subtract(100, 90), 10)  # This should fail
 
     def test_multiply_operation_returns_correct_value(self):
         print("Running test_multiply_operation_returns_correct_value")
