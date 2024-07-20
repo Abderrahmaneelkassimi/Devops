@@ -9,7 +9,7 @@ class TestSum(unittest.TestCase):
         self.assertEqual(add(10, 90), 110)
 	print("Running test_add_operation_returns_correct_value")
     def test_substract_operation_returns_correct_value(self):
-        self.assertEqual(subtract(100, 90), 10)
+        self.assertEqual(subtact(100, 90), 10)
 
     def test_multiply_operation_returns_incorrect_value(self):
         self.assertEqual(multiply(10, 10), 100)
