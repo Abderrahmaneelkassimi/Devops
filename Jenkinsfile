@@ -10,8 +10,9 @@ stages {
     stage('build') {
         steps {
    		 sh 'python3 operations.py'
-		 
+					 
      }
+  }
     stage ('Test'){
         steps {
             sh 'python3 -m unit-test'
