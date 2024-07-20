@@ -7,7 +7,7 @@ from operations import add
 
 def test_add():
     print("okokokok")
-    assert add(2, 3) == 6
+    assert add(2, 3) == 5
 
 if __name__ == "__main__":
     print("Running test_add_operation_returns_correct_value")
