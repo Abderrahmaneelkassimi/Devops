@@ -3,7 +3,7 @@ agent any
 stages {
     stage ('GIT Checkout'){
         steps {
-            git changelog: false, poll: false, url: 'https://github.com/Tasfiq23/Devops_assessment_2.git'
+            echo "cheking out"
         }
     }
     
