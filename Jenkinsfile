@@ -15,7 +15,7 @@ stages {
   }
     stage ('Test'){
         steps {
-            sh 'python3 -m unit-test'
+            sh 'python3 -m test_operations'
 	    
         }
     }
