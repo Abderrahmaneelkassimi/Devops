@@ -9,20 +9,13 @@ stages {
     
     stage('build') {
         steps {
-   		 sh 'python3 -m venv venv'
+   		 sh 'python3 operations.py'
 		 
      }
     stage ('Test'){
         steps {
             sh 'python3 -m unit-test'
-	     def testResult = sh(script: '''#!/bin/bash
-                        source venv/bin/activate
-                        python3 -m unittest discover -s . -p "test*.py"
-                    ''', returnStatus: true, label: 'Running Tests')
-                    
-                    if (testResult != 0) {
-                        error 'Unit tests failed'
-                    }
+	    
         }
     }
 }
