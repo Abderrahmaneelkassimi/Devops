@@ -1,6 +1,6 @@
 
 
-from ops import *
+from operations import *
 
 
 def test_add():
