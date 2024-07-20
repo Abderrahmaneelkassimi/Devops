@@ -6,6 +6,7 @@ print("Running test_add_operation_returns_correct_value")
 from operations import add
 
 def test_add():
+    print("okokokok")
     assert add(2, 3) == 6
 
 if __name__ == "__main__":
