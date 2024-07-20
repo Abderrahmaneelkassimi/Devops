@@ -9,13 +9,13 @@ stages {
     
     stage('build') {
         steps {
-   		 sh 'pip install pytest'
+   		 sh 'python3 operations.py'
 					 
      }
   }
     stage ('Test'){
         steps {
-            sh 'pytest test_operations.py'
+            sh 'python3 -m test_operations'
 	    
         }
     }
